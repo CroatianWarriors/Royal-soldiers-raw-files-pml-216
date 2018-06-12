@@ -1,0 +1,63 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+
+#define CHOICE_SIZE_X           150
+#define CHOICE_SIZE_Y           22
+
+#define CHOICE_X_START          0
+#define CHOICE_Y_START          204//180
+
+#define CHOICE_SEP_OFFSET_Y     -2
+
+#define CHOICE_SEP_1            3
+
+#include "ui_mp/menustyle.inc"
+#include "ui_mp/choices_setup_teams.menu"
+
+    menuDef
+    {
+        name            "team_marinesopfor_flipped"
+        rect            0 0 640 480
+        focuscolor      COLOR_FOCUSED
+        style           WINDOW_STYLE_EMPTY
+        blurWorld       7.0
+
+        onEsc
+        {
+            scriptMenuResponse "back";
+        }
+
+        #include "ui_mp/ingamebg.inc"
+
+        CHOICE_MENU_TITLE( "@MPUI_CHOOSE_TEAM" )
+
+        #include "ui_mp/tactical_map.inc";
+
+        #define BACK_OPEN   ;
+        #include "ui_mp/navcontrols.inc"
+
+        #include "ui_mp/teamicon.inc"
+
+        CHOICE_HIGHLIGHT( 1, 0 )
+        CHOICE_BUTTON_VIS_NOHI( 1, "1. " + dvarString( g_TeamName_Allies ), play "mouse_click"; scriptMenuResponse "allies";, when( team( name ) == "TEAM_ALLIES" ); )
+        CHOICE_DBUTTON_VIS_NOHI( 1, "1. " + dvarString( g_TeamName_Allies ), when( team( name ) == "TEAM_AXIS" ); )
+
+         CHOICE_HIGHLIGHT( 2, 0 )
+        CHOICE_BUTTON_VIS_NOHI( 2, "2. " + dvarString( g_TeamName_Axis ), play "mouse_click"; scriptMenuResponse "axis";, when( team( name ) == "TEAM_AXIS" ); )
+        CHOICE_DBUTTON_VIS_NOHI( 2, "2. " + dvarString( g_TeamName_Axis ), when( team( name ) == "TEAM_ALLIES" ); )
+
+        CHOICE_HIGHLIGHT( 3, 0 )
+        CHOICE_BUTTON_VIS_NOHI( 3, "3. Auto-Assign", play "mouse_click"; scriptMenuResponse "autoassign";, 1 )
+
+        CHOICE_HIGHLIGHT( 4, 0 )
+        CHOICE_BUTTON_VIS_NOHI( 4, "4. Shoutcaster", play "mouse_click"; close self;scriptMenuResponse "shoutcast";, when( team( name ) != "TEAM_SPECTATOR" && dvarbool( scr_game_spectatetype ) ); )
+        CHOICE_DBUTTON_VIS_NOHI( 4, "4. Shoutcaster", when( team( name ) == "TEAM_SPECTATOR" || !dvarbool( scr_game_spectatetype ) ); )
+
+        CHOICE_HIGHLIGHT( 5, 0 )
+        CHOICE_BUTTON_VIS_NOHI( 5, "@MPUI_LEAVE_GAME", open popup_endgame, when(team(name) == "TEAM_FREE") )
+
+        execKey "1" { scriptMenuResponse "allies"; }
+        execKey "2" { scriptMenuResponse "axis"; }
+        execKey "3" { scriptMenuResponse "autoassign"; }
+        execKey "4" { scriptMenuResponse "shoutcast"; }
+    }

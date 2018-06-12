@@ -1,0 +1,162 @@
+Build 568 nightly Wed Jun 18 2008 04:48:38PM
+logfile opened on Sun Aug 09 20:46:32 2015
+
+'60' is not a valid value for dvar 'sv_maxclients'
+  Domain is any integer from 1 to 32
+      dvar set sv_privateClients 0
+      dvar set sv_allowDownload 1
+      dvar set sv_wwwDownload 1
+      dvar set sv_wwwBaseURL http://clan-rs.co.uk:7878/cod4
+      dvar set sv_wwwBaseURL http://clan-rs.co.uk:7878/cod4
+      dvar set sv_wwwDlDisconnected 0
+      dvar set sv_mapRotationCurrent 
+      dvar set sv_mapRotation gametype sd map mp_backlot map mp_citystreets map mp_crash map mp_crossfire map mp_strike map mp_vacant map mp_crash_snow map mp_marketcenter map mp_nuketown map mp_killhouse
+      dvar set r_fullscreen 0
+      dvar set dedicated listen server
+      dvar set developer 0
+      dvar set sv_punkbuster 0
+sv_punkbuster is write protected.
+      dvar set cl_paused 0
+      dvar set loc_language 0
+      dvar set loc_forceEnglish 0
+      dvar set com_errorTitle Error
+      dvar set com_errorMessage You have not chosen a profile yet.
+********************
+ERROR: You have not chosen a profile yet.
+********************
+      dvar set sv_disableClientConsole 0
+----- R_Init -----
+      dvar set r_fullscreen 0
+      dvar set r_ignorehwgamma 0
+      dvar set r_texFilterDisable 0
+      dvar set r_texFilterMipBias 0
+      dvar set r_fullbright 0
+      dvar set r_debugShader none
+      dvar set r_znear 4
+      dvar set r_znear_depthhack 0.1
+      dvar set r_zfar 0
+      dvar set r_fog 1
+      dvar set r_picmip_water 0
+      dvar set r_lightMap Unchanged
+      dvar set r_colorMap Unchanged
+      dvar set r_normalMap Unchanged
+      dvar set r_specularMap Unchanged
+      dvar set r_specularColorScale 1
+      dvar set r_diffuseColorScale 1
+      dvar set r_useLayeredMaterials 0
+      dvar set r_loadForRenderer 1
+      dvar set r_resampleScene 1
+      dvar set r_showPixelCost off
+      dvar set r_vc_makelog 0
+      dvar set r_showLightGrid 0
+      dvar set r_showMissingLightGrid 0
+      dvar set r_lightTweakSunLight 1
+      dvar set r_lightTweakSunColor 0 1 0 1
+      dvar set r_lightTweakSunDirection 0 0 0
+      dvar set r_norefresh 0
+      dvar set r_scaleViewport 1
+      dvar set r_aaSamples 4
+      dvar set r_vsync 0
+      dvar set r_spotLightFovInnerFraction 0.7
+      dvar set r_spotLightStartRadius 36
+      dvar set r_spotLightEndRadius 196
+      dvar set r_spotLightShadows 1
+      dvar set r_spotLightSModelShadows 1
+      dvar set r_spotLightEntityShadows 1
+      dvar set r_spotLightBrightness 14
+      dvar set r_lockPvs 0
+      dvar set r_skipPvs 0
+      dvar set r_singleCell 0
+      dvar set r_portalWalkLimit 0
+      dvar set r_portalMinRecurseDepth 2
+      dvar set r_showPortals 0
+      dvar set r_showFbColorDebug None
+      dvar set r_showFloatZDebug 0
+      dvar set r_floatz 1
+      dvar set r_highLodDist -1
+      dvar set r_mediumLodDist -1
+      dvar set r_lowLodDist -1
+      dvar set r_lowestLodDist -1
+      dvar set r_forceLod none
+      dvar set r_modelVertColor 1
+      dvar set r_modelVertColor 1
+      dvar set sc_blur 2
+      dvar set sc_count 24
+      dvar set sc_debugCasterCount 24
+      dvar set sc_debugReceiverCount 24
+      dvar set sc_showOverlay 0
+      dvar set sc_showDebug 0
+      dvar set sc_wantCount 12
+      dvar set sc_wantCountMargin 1
+      dvar set sc_fadeRange 0.25
+      dvar set sc_shadowInRate 2
+      dvar set sc_shadowOutRate 5
+      dvar set sc_length 400
+      dvar set sc_offscreenCasterLodBias 0
+      dvar set sc_offscreenCasterLodScale 20
+      dvar set sm_sunEnable 1
+      dvar set sm_spotEnable 1
+      dvar set sm_sunSampleSizeNear 0.25
+      dvar set sm_sunShadowCenter 0 0 0
+      dvar set sm_sunShadowScale 1
+      dvar set sm_strictCull 1
+      dvar set sm_fastSunShadow 1
+      dvar set sm_qualitySpotShadow 1
+      dvar set r_blur 0
+      dvar set r_glow 1
+      dvar set r_glowUseTweaks 0
+      dvar set r_glowTweakEnable 0
+      dvar set r_glowTweakRadius0 5
+      dvar set r_glowTweakBloomIntensity0 1
+      dvar set r_glowTweakBloomCutoff 0.5
+      dvar set r_glowTweakBloomDesaturation 0
+      dvar set r_filmUseTweaks 0
+      dvar set r_contrast 1
+      dvar set r_brightness 0
+      dvar set r_desaturation 1
+      dvar set r_dof_tweak 0
+      dvar set r_dof_nearBlur 6
+      dvar set r_dof_farBlur 1.8
+      dvar set r_dof_viewModelStart 2
+      dvar set r_dof_viewModelEnd 8
+      dvar set r_dof_nearStart 10
+      dvar set r_dof_nearEnd 60
+      dvar set r_dof_farStart 1000
+      dvar set r_dof_farEnd 7000
+      dvar set r_dof_bias 0.5
+      dvar set r_sun_from_dvars 0
+      dvar set r_monitor 0
+      dvar set r_rendererPreference Default
+      dvar set r_aspectRatio auto
+      dvar set r_customMode 
+      dvar set r_altModelLightingUpdate 1
+      dvar set r_preloadShaders 0
+DirectX reports 512 MB of video memory and 3228 MB of available texture memory.
+Using video memory size to cap used texture memory at 496 MB.
+Using previously reported texture memory size of 496 MB.
+Texture detail is set automatically.
+      dvar set r_picmip 0
+      dvar set r_picmip_bump 0
+      dvar set r_picmip_spec 0
+Using picmip 0 on most textures, 0 on normal maps, and 0 on specular maps
+      dvar set ui_hud_hardcore 0
+      dvar set ui_mousePitch 0
+      dvar set ui_netGametypeName dm
+Working directory: C:\Users\CrazY\Desktop\cod4
+      dvar set cl_punkbuster 0
+      dvar set com_errorTitle Error
+      dvar set com_errorMessage Unable to initialize Punkbuster.  Punkbuster is disabled.
+      dvar set sv_punkbuster 0
+Error: Unable to initialize punkbuster.  Punkbuster is disabled
+      dvar set com_errorTitle Error
+      dvar set com_errorMessage Unable to initialize Punkbuster.  Punkbuster is disabled.
+Huffman Took 3 Milliseconds
+quitting...
+----- CL_Shutdown -----
+      dvar set sv_disableClientConsole 0
+-----------------------
+Unloaded fastfile localized_common_mp
+Unloaded fastfile common_mp
+Unloaded fastfile ui_mp
+Unloaded fastfile localized_code_post_gfx_mp
+Unloaded fastfile code_post_gfx_mp
